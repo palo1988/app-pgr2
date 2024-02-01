@@ -10,7 +10,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 import java.util.List;
 
 @SpringBootApplication
-public class PrimeraWebSpringbootApplication implements CommandLineRunner {
+public class PrimeraWebSpringbootApplication  {
     @Autowired
     public PersonaRepository personaRepository;
 
@@ -19,7 +19,7 @@ public class PrimeraWebSpringbootApplication implements CommandLineRunner {
         SpringApplication.run(PrimeraWebSpringbootApplication.class, args);
 
     }
-
+/*
     @Override
     public void run(String... args) throws Exception {
         personaRepository.save(new Persona(5l, "Carolina", 35));
@@ -29,5 +29,7 @@ public class PrimeraWebSpringbootApplication implements CommandLineRunner {
         System.out.println("numero de personas en la tabla: " + personaRepository.count());
         List<Persona> personas = personaRepository.findAll();
         personas.forEach(p -> System.out.println("nombre de la persona: " + p.getNombre()));
-    }
+    }*/
+
+
 }
